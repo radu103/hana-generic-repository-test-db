@@ -1,0 +1,24 @@
+namespace testdb.database;
+
+context data {
+	
+	type Guid : String(36);
+
+	entity model1 {
+		id : Guid;
+		name : String(255);
+		active : Boolean;
+		value : Integer;
+		datetime : UTCTimestamp;
+	};
+	
+	entity model2 {
+		id : String(20);
+		name : String(255);
+	};
+	
+	entity model3 {
+		id : Integer;
+		name : String(255);
+	};
+}
