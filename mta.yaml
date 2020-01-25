@@ -8,6 +8,16 @@ modules:
    path: database
    requires:
     - name: hdi_database
+ - name: analytics
+   type: nodejs
+   path: analytics
+   requires:
+    - name: database
+    - name: hdi_database   
+   provides:
+    - name: analytics_api
+      properties:
+         url: ${default-url}
 
 resources:
  - name: hdi_database

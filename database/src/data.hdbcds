@@ -5,7 +5,7 @@ context data {
 	type Guid : String(36);
 
 	entity model1 {
-		id : Guid;
+		key id : Guid;
 		name : String(255);
 		active : Boolean;
 		value : Integer;
@@ -13,12 +13,12 @@ context data {
 	};
 	
 	entity model2 {
-		id : String(20);
+		key id : String(20);
 		name : String(255);
 	};
 	
 	entity model3 {
-		id : Integer;
+		key id : Integer;
 		name : String(255);
 	};
 }

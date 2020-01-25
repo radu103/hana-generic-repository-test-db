@@ -1,0 +1,5 @@
+service{
+	"testdb.database::data.model1" as "model1";
+	"testdb.database::data.model2" as "model2";
+	"testdb.database::data.model3" as "model3";
+}
