@@ -7,6 +7,7 @@ context data {
 	entity model1 {
 		key id : Guid;
 		name : String(255);
+		email : String(255);
 		active : Boolean;
 		value : Integer;
 		datetime : UTCTimestamp;
